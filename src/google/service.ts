@@ -1,10 +1,10 @@
 import { Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
-import { UserGoogle, DocumentUserGoogle } from 'src/models/user-google.schema';
+import { UserGoogle, DocumentUserGoogle } from '@src/models/user-google.schema';
 import { ReqDataUserGoogleType, UserGoogleType } from './dto';
 import { OAuth2Client } from 'google-auth-library';
-import appConfig from 'src/config';
+import appConfig from '@src/config';
 
 const client = new OAuth2Client();
 

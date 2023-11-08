@@ -1,12 +1,12 @@
 import { HttpException, HttpStatus, Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
-import { User, DocumentUser } from 'src/models/user.schema';
+import { User, DocumentUser } from '@src/models/user.schema';
 import { BodyDataUserType } from './dto/index.';
-import { EmailService } from 'src/email';
-import appConfig from 'src/config';
-import { TokenResetPasswordService } from 'src/email/service';
-import { PasswordResetToken } from 'src/models/password-reset-token.schema';
+import { EmailService } from '@src/email';
+import appConfig from '@src/config';
+import { TokenResetPasswordService } from '@src/email/service';
+import { PasswordResetToken } from '@src/models/password-reset-token.schema';
 import { v4 as uuidv4 } from 'uuid';
 
 @Injectable()

@@ -4,7 +4,7 @@ import * as smtpTransport from 'nodemailer-smtp-transport';
 import { MailOptions } from 'nodemailer/lib/json-transport';
 import * as fs from 'fs';
 import * as util from 'util';
-import appConfig from 'src/config';
+import appConfig from '@src/config';
 
 @Injectable()
 export class EmailService {

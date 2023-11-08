@@ -3,7 +3,7 @@ import { UserService } from './user.service';
 import { ApiBearerAuth, ApiResponse, ApiTags } from '@nestjs/swagger';
 import { ResBodyDataUserType } from '../auth/dto';
 import { BodyDataUserType } from './dto/index.';
-import { User } from 'src/models/user.schema';
+import { User } from '@src/models/user.schema';
 
 @Controller('user')
 @ApiTags('Users')

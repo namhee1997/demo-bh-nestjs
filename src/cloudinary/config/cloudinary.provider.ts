@@ -1,5 +1,5 @@
 import { v2 as cloudinary } from 'cloudinary';
-import appConfig from 'src/config';
+import appConfig from '@src/config';
 
 export const CloudinaryProvider = {
   provide: 'Cloudinary',

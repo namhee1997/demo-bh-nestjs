@@ -4,7 +4,7 @@ import { Model } from 'mongoose';
 import {
   PasswordResetToken,
   DocumentPasswordReset,
-} from 'src/models/password-reset-token.schema';
+} from '@src/models/password-reset-token.schema';
 import { BodyDataType } from './dto';
 
 @Injectable()

@@ -9,7 +9,7 @@ import {
 } from '@nestjs/common';
 import { ApiResponse, ApiTags } from '@nestjs/swagger';
 import { BlogService } from './blog.service';
-import { Blog } from 'src/models/blog.schema';
+import { Blog } from '@src/models/blog.schema';
 import {
   BodyDataBlogType,
   ReqDataBlogType,

@@ -2,7 +2,7 @@ import { HttpException, HttpStatus, Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model, ObjectId } from 'mongoose';
 import { BodyDataBlogType, ReqDataBlogType } from './dto/index.';
-import { Blog, DocumentBlog } from 'src/models/blog.schema';
+import { Blog, DocumentBlog } from '@src/models/blog.schema';
 
 @Injectable()
 export class BlogService {

@@ -1,7 +1,7 @@
 import { HttpStatus, Injectable, NestMiddleware } from '@nestjs/common';
 import { Request, Response, NextFunction } from 'express';
-import { SecurityService } from 'src/utils/security';
-import { UserService } from 'src/v1/user/user.service';
+import { SecurityService } from '@src/utils/security';
+import { UserService } from '@src/v1/user/user.service';
 
 @Injectable()
 export class TokenMiddleware implements NestMiddleware {

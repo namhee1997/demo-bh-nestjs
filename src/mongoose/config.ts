@@ -1,5 +1,5 @@
 import { MongooseModuleOptions } from '@nestjs/mongoose';
-import appConfig from 'src/config';
+import appConfig from '@src/config';
 
 export const mongooseConfig: MongooseModuleOptions = {
   uri: appConfig.MONGODB_URL,

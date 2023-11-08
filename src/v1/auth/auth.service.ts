@@ -1,15 +1,15 @@
 import { HttpException, HttpStatus, Injectable } from '@nestjs/common';
-import { User } from 'src/models/user.schema';
+import { User } from '@src/models/user.schema';
 import { ReqTokenDto, NewPasswordDto, RequestBodyDataUserType } from './dto';
-import { SecurityService } from 'src/utils/security';
+import { SecurityService } from '@src/utils/security';
 import { UserService } from '../user/user.service';
-import { TokenResetPasswordService } from 'src/email/service';
-import { UserGoogledService } from 'src/google/service';
-import { ResponseDataGoogle } from 'src/google/dto';
-import { CloudinaryService } from 'src/cloudinary/cloudinary.service';
-import { isImage, isValidEmail } from 'src/utils';
-import appConfig from 'src/config';
-import { DataToken } from 'src/domain/schema';
+import { TokenResetPasswordService } from '@src/email/service';
+import { UserGoogledService } from '@src/google/service';
+import { ResponseDataGoogle } from '@src/google/dto';
+import { CloudinaryService } from '@src/cloudinary/cloudinary.service';
+import { isImage, isValidEmail } from '@src/utils';
+import appConfig from '@src/config';
+import { DataToken } from '@src/domain/schema';
 
 @Injectable()
 export class AuthService {

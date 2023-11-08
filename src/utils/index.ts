@@ -1,4 +1,4 @@
-import appConfig from 'src/config';
+import appConfig from '@src/config';
 
 export const isValidEmail = (email: string) => {
   return appConfig.REGEX_EMAIL.test(email);

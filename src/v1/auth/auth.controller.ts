@@ -17,7 +17,7 @@ import {
   TokenTypes,
 } from './dto';
 import { AuthService } from './auth.service';
-import { Token } from 'src/domain/response-type';
+import { Token } from '@src/domain/response-type';
 import {
   ApiBearerAuth,
   ApiBody,
@@ -25,8 +25,8 @@ import {
   ApiResponse,
   ApiTags,
 } from '@nestjs/swagger';
-import { ResponseDataGoogle } from 'src/google/dto';
-import { User } from 'src/models/user.schema';
+import { ResponseDataGoogle } from '@src/google/dto';
+import { User } from '@src/models/user.schema';
 import { FileInterceptor } from '@nestjs/platform-express';
 
 @ApiTags('Auth')
